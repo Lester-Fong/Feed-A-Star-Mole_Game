@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  cursor: url("./mole-game/cursor.png"), default;
+  background: #c0c86d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bg {
+  background: url("./mole-game/background.png");
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hole {
+  background: black;
+  border-radius: 50%;
+  overflow: visible;
+  height: 267px;
+  width: 267px;
+}
+
+.hole-container {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mole {
+  position: relative;
+  right: 30px;
+}
+
+.hungry {
+  cursor: url("./mole-game/cursor-worm.png");
+}
+
+.gone {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.worm {
+  width: 1660px;
+}
+
+.worm-container {
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+}
+
+.worm-box {
+  width: 1660px;
+}
